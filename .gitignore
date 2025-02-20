@@ -1,0 +1,36 @@
+# Composer
+/vendor/
+
+# PHPStorm / JetBrains
+/.idea/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PHPUnit
+/phpunit-result.xml
+/phpunit.xml
+/phpunit.xml.dist
+.phpunit.result.cache
+
+# Logs
+/logs/*
+!/logs/.gitkeep
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+/tmp/
+/*.swp
+*.bak
+*.orig
+
+# Composer PHAR file
+/composer.phar
+
+# Ignore compiled PHP files
+*.phar
