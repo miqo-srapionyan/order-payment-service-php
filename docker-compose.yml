@@ -4,9 +4,7 @@ services:
     app:
         build: .
         ports:
-            - "8080:80"
-        volumes:
-            - .:/var/www/html
+            - "8888:80"
         depends_on:
             - db
         environment:

@@ -12,8 +12,19 @@ This project is created with:
 ## Setup  
 To run this project, make sure you have installed Docker, and ensure these ports are available:  
 
-- `8080` - for the API service  
+- `8888` - for the API service  
 - `3306` - for MySQL (if applicable)  
+
+## Environment Variables
+Before running the project, create an `.env` file in the root directory with the following contents:
+```sh
+DB_HOST=db
+DB_NAME=ecommerce
+DB_USER=user
+DB_PASS=password
+
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
 
 ### Install and run locally:  
 
@@ -26,17 +37,6 @@ cd order-payment-service-php.git
 
 # Start the service
 docker-compose up -d --build
-```
-
-## Environment Variables
-Before running the project, create an `.env` file in the root directory with the following contents:
-```sh
-DB_HOST=db
-DB_NAME=ecommerce
-DB_USER=user
-DB_PASS=password
-
-STRIPE_SECRET_KEY=your_stripe_secret_key
 ```
 
 # Obtaining a Stripe API Key
