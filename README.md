@@ -33,7 +33,7 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 git clone git@github.com:miqo-srapionyan/order-payment-service-php.git
 
 # Navigate into the project directory
-cd order-payment-service-php.git
+cd order-payment-service-php
 
 # Start the service
 docker-compose up -d --build
